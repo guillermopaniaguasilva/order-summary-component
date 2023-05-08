@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $pale-blue url('../assets/images/pattern-background-mobile.svg')
+    no-repeat;
+  background-size: cover;
+
+  @media only screen and (min-width: 600px) {
+    background: $pale-blue
+      url('../assets/images/pattern-background-desktop.svg') no-repeat;
+    background-size: cover;
+  }
+}
